@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = "build_task5/BMS TASK 5.ino.bin"
+elf = "build_task5/BMS TASK 5.ino.elf"

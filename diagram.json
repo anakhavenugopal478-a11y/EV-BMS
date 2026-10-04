@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "author": "Anakha Venugopal",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -38.4, "left": -23.96, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -68.5, "left": -134.6, "attrs": {} },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": 182.6, "left": 67.2, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -60.8,
+      "left": 140,
+      "attrs": { "pins": "i2c" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:34", "pot1:SIG", "green", [ "h-76.65", "v19.2" ] ],
+    [ "esp:3V3", "pot1:GND", "green", [ "h0" ] ],
+    [ "esp:GND.1", "pot1:VCC", "black", [ "h0" ] ],
+    [ "esp:3V3", "relay1:VCC", "green", [ "h144.15", "v172.8" ] ],
+    [ "esp:GND.3", "relay1:GND", "black", [ "h19.2", "v48" ] ],
+    [ "esp:19", "relay1:IN", "green", [ "h0" ] ],
+    [ "lcd1:GND", "esp:GND.2", "black", [ "h0" ] ],
+    [ "lcd1:VCC", "esp:5", "red", [ "h0" ] ],
+    [ "lcd1:SDA", "esp:21", "green", [ "h0" ] ],
+    [ "lcd1:SCL", "esp:22", "green", [ "h0" ] ],
+    [ "relay1:COM", "esp:GND.1", "green", [ "h0" ] ],
+    [ "relay1:NO", "esp:18", "green", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
