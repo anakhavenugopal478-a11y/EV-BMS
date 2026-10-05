@@ -1,6 +1,6 @@
 # EV-BMS: ESP32 Battery Management System
 
-An ESP32-based battery management system for EV applications. It monitors cell voltages, detects battery faults, controls a protection relay, and sends live telemetry to a Blynk dashboard. The whole thing is simulated and tested in Wokwi.
+An ESP32 based battery management system for EV applications. It monitors cell voltages, detects battery faults, controls a protection relay, and sends live telemetry to a Blynk dashboard. The whole thing is simulated and tested in Wokwi.
 
 ## What it does
 - Reads battery voltage through the ESP32 ADC
