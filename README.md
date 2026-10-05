@@ -31,7 +31,7 @@ An ESP32 based battery management system for EV applications. It monitors cell v
 The Blynk dashboard shows cell voltages, weakest and strongest cell, voltage imbalance, battery SoC, relay status, fault state, fault count, risk score, uptime, system state and fault history.
 
 ## Files
-- EV_BMS_FINAL.ino: firmware source code
+- `EV_BMS_FINAL.ino`: firmware source code
 - `diagram.json`: Wokwi circuit
 - `wokwi.toml`: Wokwi project configuration
 
