@@ -40,5 +40,12 @@ The Blynk dashboard shows cell voltages, weakest and strongest cell, voltage imb
 2. Start the simulation.
 3. Turn the potentiometer to change the battery voltage and watch the state change.
 
+## Online Simulation
+
+**Wokwi Project:** [Run EV BMS Simulation](https://wokwi.com/projects/477415249167292417)
+
+The project can be opened and tested online using Wokwi.
+
+
 ## Author
 Anakha Venugopal
